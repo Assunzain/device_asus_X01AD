@@ -202,6 +202,7 @@ PRODUCT_PACKAGES += \
     memtrack.msm8953 \
     libdisplayconfig \
     libqdMetaData.system \
+<<<<<<< HEAD
     libtinyxml
 
 PRODUCT_PACKAGES += \
@@ -220,6 +221,11 @@ PRODUCT_COPY_FILES += \
 # Display Device Config
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/displayconfig/display_id_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_0.xml
+=======
+    libgenlock \
+    libtinyxml \
+    vendor.display.config@1.9
+>>>>>>> 2a12879a (onclite: Update display config to version 1.9)
 
 # Doze mode
 PRODUCT_PACKAGES += \

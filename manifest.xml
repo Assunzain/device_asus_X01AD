@@ -132,7 +132,11 @@
     <hal format="hidl">
         <name>vendor.display.config</name>
         <transport>hwbinder</transport>
-        <fqname>@1.1::IDisplayConfig/default</fqname>
+        <version>1.9</version>
+        <interface>
+            <name>IDisplayConfig</name>
+            <instance>default</instance>
+        </interface>
     </hal>
     <hal format="hidl">
         <name>vendor.display.postproc</name>
