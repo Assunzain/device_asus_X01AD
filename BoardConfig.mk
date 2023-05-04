@@ -92,7 +92,6 @@ BLUETOOTH_HCI_USE_MCT := true
 TARGET_USE_QTI_BT_SAR := true
 TARGET_USE_QTI_BT_CHANNEL_AVOIDANCE := true
 BOARD_USES_COMMON_BLUETOOTH_HAL := true
->>>>>>> 8adb8f895 (X01AD: Upgrade BT stack from sunfish)
 
 # Build
 BUILD_BROKEN_DUP_RULES := true
@@ -174,6 +173,7 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno506
 
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/proc/tpd_gesture"
+TARGET_USES_INTERACTION_BOOST := true
 
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
