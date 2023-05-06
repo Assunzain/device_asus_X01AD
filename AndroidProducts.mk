@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nad_X01AD.mk
+    $(LOCAL_DIR)/rr_X01AD.mk
 
 COMMON_LUNCH_CHOICES := \
-    nad_X01AD-user \
-    nad_X01AD-userdebug \
-    nad_X01AD-eng
+    rr_X01AD-user \
+    rr_X01AD-userdebug \
+    rr_X01AD-eng
