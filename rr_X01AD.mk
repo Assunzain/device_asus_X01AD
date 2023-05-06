@@ -21,23 +21,29 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from X01AD device
 $(call inherit-product, device/asus/X01AD/device.mk)
 
-# Inherit some common Nusantara stuff.
-$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+# Inherit some common Resurrection stuff.
+$(call inherit-product, vendor/rr/config/common_full_phone.mk)
+
 
 # Set shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Nusantara
-NAD_BUILD_TYPE := UNOFFICIAL
-# Face Unlock
+# RR Stuffs
 TARGET_FACE_UNLOCK_SUPPORTED := true
+RR_BUILDTYPE := Unofficial
 
+# RR Wallpapers
+BUILD_RR_WALLPAPERS := true
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 720
 
+
+TARGET_GAPPS_ARCH := arm64
+WITH_GMS := false
+
 # Device identifiers.
-PRODUCT_NAME := nad_X01AD
+PRODUCT_NAME := rr_X01AD
 PRODUCT_DEVICE := X01AD
 PRODUCT_MANUFACTURER := asus
 PRODUCT_BRAND := asus
