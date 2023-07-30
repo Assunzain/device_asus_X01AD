@@ -54,9 +54,6 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
     
-# Gcam Product
-PRODUCT_PACKAGES += \
-    GcamGoMod
 
 # Permissions
 PRODUCT_COPY_FILES += \
