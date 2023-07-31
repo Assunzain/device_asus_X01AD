@@ -22,9 +22,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from X01AD device
 $(call inherit-product, device/asus/X01AD/device.mk)
 
-# Inherit some common CherishOS stuff.
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
-
+# Inherit some common Project Blaze stuff.
+$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
 
 # Set shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
@@ -32,20 +31,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_BUILD_APERTURE_CAMERA := true
-# CherishOS Stuff with GApps
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_ENABLE_BLUR := true
-WITH_GMS := false
-TARGET_IS_PIXEL := true
-CHERISH_BUILD_TYPE := UNOFFICIAL
 
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.cherish.maintainer=AssunZain
+# Blaze Official Stuff
+BLAZE_BUILD_TYPE := UNOFFICIAL
+BLAZE_MAINTAINER := AssunZain
+TARGET_GAPPS_ARCH := arm64
+TARGET_SUPPORTS_BLUR := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_USE_PIXEL_CHARGER := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+WITH_GAPPS := false
 
 # Device identifiers.
-PRODUCT_NAME := cherish_X01AD
+PRODUCT_NAME := blaze_X01AD
 PRODUCT_DEVICE := X01AD
 PRODUCT_MANUFACTURER := asus
 PRODUCT_BRAND := asus
