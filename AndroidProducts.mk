@@ -16,9 +16,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/blaze_X01AD.mk
+    $(LOCAL_DIR)/arrow_X01AD.mk
 
 COMMON_LUNCH_CHOICES := \
-    blaze_X01AD-user \
-    blaze_X01AD-userdebug \
-    blaze_X01AD-eng
+    arrow_X01AD-user \
+    arrow_X01AD-userdebug \
+    arrow_X01AD-eng

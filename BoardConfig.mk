@@ -63,6 +63,7 @@ TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-pr
 TARGET_KERNEL_CONFIG := GreenLight_defconfig
 TARGET_KERNEL_SOURCE := kernel/asus/X01AD
 TARGET_KERNEL_VERSION := 4.9
+ALLOW_MISSING_DEPENDENCIES := true
 
 
 # Audio
