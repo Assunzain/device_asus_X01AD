@@ -16,9 +16,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cherish_X01AD.mk
+    $(LOCAL_DIR)/spark_X01AD.mk
 
 COMMON_LUNCH_CHOICES := \
-    cherish_X01AD-user \
-    cherish_X01AD-userdebug \
-    cherish_X01AD-eng
+    spark_X01AD-user \
+    spark_X01AD-userdebug \
+    spark_X01AD-eng
