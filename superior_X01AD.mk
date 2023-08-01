@@ -22,8 +22,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from X01AD device
 $(call inherit-product, device/asus/X01AD/device.mk)
 
-# Inherit some common spark stuff.
-$(call inherit-product, vendor/spark/config/common_full_phone.mk)
+# Inherit some common SuperiorOS stuff.
+$(call inherit-product, vendor/superior/config/common.mk)
+
+SUPERIOR_OFFICIAL := false
+TARGET_INCLUDE_PIXEL_CHARGER := true
 
 # Set shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
@@ -38,7 +41,7 @@ WITH_GAPPS := false
 SPARK_BUILD_TYPE := UNOFFICIAL
 
 # Device identifiers.
-PRODUCT_NAME := spark_X01AD
+PRODUCT_NAME := superior_X01AD
 PRODUCT_DEVICE := X01AD
 PRODUCT_MANUFACTURER := asus
 PRODUCT_BRAND := asus
