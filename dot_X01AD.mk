@@ -17,11 +17,10 @@
 # Inherit from X01AD device
 $(call inherit-product, device/asus/X01AD/device.mk)
 
-# Inherit some common NusantaraProject stuff
-$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
+# Inherit some common DotOS stuff.
+$(call inherit-product, vendor/dot/config/common.mk)
 
 # Extra Flags
-NAD_BUILD_TYPE := UNOFFICIAL
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := true
 
@@ -32,7 +31,7 @@ TARGET_BOOT_ANIMATION_RES := 720
 USE_PIXEL_CHARGING := true
 
 # Device identifiers.
-PRODUCT_NAME := nad_X01AD
+PRODUCT_NAME := dot_X01AD
 PRODUCT_DEVICE := X01AD
 PRODUCT_MANUFACTURER := asus
 PRODUCT_BRAND := asus
