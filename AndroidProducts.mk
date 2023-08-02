@@ -16,9 +16,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/superior_X01AD.mk
+    $(LOCAL_DIR)/potato_X01AD.mk
 
 COMMON_LUNCH_CHOICES := \
-    superior_X01AD-user \
-    superior_X01AD-userdebug \
-    superior_X01AD-eng
+    potato_X01AD-user \
+    potato_X01AD-userdebug \
+    potato_X01AD-eng

@@ -22,11 +22,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from X01AD device
 $(call inherit-product, device/asus/X01AD/device.mk)
 
-# Inherit some common SuperiorOS stuff.
-$(call inherit-product, vendor/superior/config/common.mk)
-
-SUPERIOR_OFFICIAL := false
-TARGET_INCLUDE_PIXEL_CHARGER := true
+# Inherit some common POSP stuff.
+$(call inherit-product, vendor/potato/config/common_full_phone.mk)
 
 # Set shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
@@ -34,14 +31,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_BUILD_APERTURE_CAMERA := true
-# SparkOS Stuff with GApps
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 WITH_GAPPS := false
-SPARK_BUILD_TYPE := UNOFFICIAL
 
 # Device identifiers.
-PRODUCT_NAME := superior_X01AD
+PRODUCT_NAME := potato_X01AD
 PRODUCT_DEVICE := X01AD
 PRODUCT_MANUFACTURER := asus
 PRODUCT_BRAND := asus
