@@ -22,20 +22,27 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from X01AD device
 $(call inherit-product, device/asus/X01AD/device.mk)
 
-# Inherit some common POSP stuff.
-$(call inherit-product, vendor/potato/config/common_full_phone.mk)
-
-# Set shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
+# Inherit some common banana stuff
+$(call inherit-product, vendor/banana/config/common.mk)
 
+
+WITH_GAPPS := false
+BUILD_CORE_GAPPS := false
+BUILD_CORE_GAPPS_EXTRA := false
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+TARGER_SUPPORTS_NEXT_GEN_ASSISTANT := false
+BANANA_MAINTAINER := AssunZain
+TARGET_ENABLE_BLUR := true
+TARGET_HAS_UDFPS := true
+TARGET_EXCLUDE_MATLOG := true
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_BUILD_APERTURE_CAMERA := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-WITH_GAPPS := false
 
 # Device identifiers.
-PRODUCT_NAME := potato_X01AD
+PRODUCT_NAME := banana_X01AD
 PRODUCT_DEVICE := X01AD
 PRODUCT_MANUFACTURER := asus
 PRODUCT_BRAND := asus

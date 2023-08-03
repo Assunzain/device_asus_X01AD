@@ -16,9 +16,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/potato_X01AD.mk
+    $(LOCAL_DIR)/banana_X01AD.mk
 
 COMMON_LUNCH_CHOICES := \
-    potato_X01AD-user \
-    potato_X01AD-userdebug \
-    potato_X01AD-eng
+    banana_X01AD-user \
+    banana_X01AD-userdebug \
+    banana_X01AD-eng
