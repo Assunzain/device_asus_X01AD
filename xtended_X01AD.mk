@@ -37,9 +37,6 @@ WITH_GAPPS := false
 TARGET_BUILD_APERTURE_CAMERA := true
 XTENDED_BUILD_DONATE_URL := http://teer.id/hzproject
 
-# UDFPS animations
-EXTRA_UDFPS_ANIMATIONS := true
-
 # Device identifiers.
 PRODUCT_NAME := xtended_X01AD
 PRODUCT_DEVICE := X01AD
