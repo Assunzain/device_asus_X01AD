@@ -25,20 +25,20 @@ $(call inherit-product, device/asus/X01AD/device.mk)
 # Inherit some common Project Xtended OS stuff.
 $(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
+
 # Set shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 
 # Xtended Stuffs
-XTENDED_BUILD_MAINTAINER := Akang.Zain (@AssunZain)
-XTENDED_BUILD_TYPE := UNOFFICIAL
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_USES_BLUR := true
 WITH_GAPPS := false
 TARGET_BUILD_APERTURE_CAMERA := true
 XTENDED_BUILD_DONATE_URL := http://teer.id/hzproject
+
+# UDFPS animations
+EXTRA_UDFPS_ANIMATIONS := true
 
 # Device identifiers.
 PRODUCT_NAME := xtended_X01AD
