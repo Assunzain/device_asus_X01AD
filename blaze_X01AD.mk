@@ -28,20 +28,19 @@ $(call inherit-product, vendor/blaze/config/common_full_phone.mk)
 # Set shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-
-TARGET_BOOT_ANIMATION_RES := 720
-TARGET_BUILD_APERTURE_CAMERA := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-
 # Blaze Official Stuff
 BLAZE_BUILD_TYPE := UNOFFICIAL
-BLAZE_MAINTAINER := AssunZain
+BLAZE_MAINTAINER := AssunZaun
+TARGET_BOOT_ANIMATION_RES := 720
 TARGET_GAPPS_ARCH := arm64
 TARGET_SUPPORTS_BLUR := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_USE_PIXEL_CHARGER := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 WITH_GAPPS := false
+
+TARGET_BUILD_APERTURE_CAMERA := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
 # Device identifiers.
 PRODUCT_NAME := blaze_X01AD
