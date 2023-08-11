@@ -164,10 +164,7 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 4294967296
 # Partitions - Userdata
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 55423516160
 
-<<<<<<< HEAD
-=======
-#Userimages target
->>>>>>> c371e6e (X01AD: Add support partition F2FS)
+# Userimages target
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
