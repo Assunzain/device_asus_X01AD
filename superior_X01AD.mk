@@ -25,20 +25,19 @@ $(call inherit-product, device/asus/X01AD/device.mk)
 # Inherit some common SuperiorOS stuff.
 $(call inherit-product, vendor/superior/config/common.mk)
 
-SUPERIOR_OFFICIAL := false
-TARGET_INCLUDE_PIXEL_CHARGER := true
-
 # Set shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_BUILD_APERTURE_CAMERA := true
-# SparkOS Stuff with GApps
+# Stuff
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 WITH_GAPPS := false
-SPARK_BUILD_TYPE := UNOFFICIAL
+TARGET_INCLUDE_PIXEL_CHARGER := true
+TARGET_USES_BLUR := true
+SUPERIOR_OFFICIAL := false
 
 # Device identifiers.
 PRODUCT_NAME := superior_X01AD
