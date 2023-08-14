@@ -28,7 +28,8 @@ $(call inherit-product, vendor/octavi/config/common_full_phone.mk)
 # Set shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Derp
+# Octavi flags
+OCTAVI_MAINTAINER := AssunZain
 WITH_GAPPS := false
 OCTAVI_BUILD_TYPE := UNOFFICIAL
 TARGET_BOOT_ANIMATION_RES := 720
