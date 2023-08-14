@@ -36,7 +36,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-derp
+    $(LOCAL_PATH)/overlay-octavi
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
@@ -53,10 +53,6 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 # Soong Namespace
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
-    
-# Gcam Product
-PRODUCT_PACKAGES += \
-    GcamGoMod
 
 # Permissions
 PRODUCT_COPY_FILES += \

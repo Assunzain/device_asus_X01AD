@@ -48,6 +48,9 @@ debug.sdm.support_writeback=0
 debug.sf.disable_backpressure=1
 debug.sf.enable_gl_backpressure=1
 
+# Maintainer
+ro.octavi.maintainer=AssunZain
+
 # surface flinger 
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 

@@ -16,9 +16,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_X01AD.mk
+    $(LOCAL_DIR)/octavi_X01AD.mk
 
 COMMON_LUNCH_CHOICES := \
-    derp_X01AD-user \
-    derp_X01AD-userdebug \
-    derp_X01AD-eng
+    octavi_X01AD-user \
+    octavi_X01AD-userdebug \
+    octavi_X01AD-eng
