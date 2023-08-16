@@ -16,9 +16,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/octavi_X01AD.mk
+    $(LOCAL_DIR)/leaf_X01AD.mk
 
 COMMON_LUNCH_CHOICES := \
-    octavi_X01AD-user \
-    octavi_X01AD-userdebug \
-    octavi_X01AD-eng
+    leaf_X01AD-user \
+    leaf_X01AD-userdebug \
+    leaf_X01AD-eng
