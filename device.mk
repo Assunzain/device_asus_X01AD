@@ -126,10 +126,6 @@ PRODUCT_PACKAGES += \
 # add libbqio
 PRODUCT_PACKAGES += \
     libbfqio
-    
-# add QCamera2
-PRODUCT_PACKAGES += \
-    camera
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.conf \
