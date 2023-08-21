@@ -30,7 +30,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-carbon
+    $(LOCAL_PATH)/overlay-zenx
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
@@ -38,6 +38,10 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 
 # Asserts
 TARGET_OTA_ASSERT_DEVICE := X01A,X01AD
+
+# Configstore
+PRODUCT_PACKAGES += \
+disable_configstore
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1520
