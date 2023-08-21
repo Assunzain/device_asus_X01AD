@@ -49,6 +49,10 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 PRODUCT_PACKAGES += \
 disable_configstore
 
+# Gcam Product
+PRODUCT_PACKAGES += \
+    GcamGoMod
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1520
 TARGET_SCREEN_WIDTH := 720
