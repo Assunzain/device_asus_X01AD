@@ -57,6 +57,7 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
     
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
@@ -160,8 +161,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5 \
     vendor.qti.hardware.camera.device@1.0 \
     vendor.qti.hardware.camera.device@1.0.vendor \
-    libstdc++.vendor \
-    GoogleCameraGo
+    libstdc++.vendor
 
 # Cgroup and task_profiles
 PRODUCT_COPY_FILES += \
