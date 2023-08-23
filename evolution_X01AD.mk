@@ -36,6 +36,9 @@ TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 TARGET_BUILD_APERTURE_CAMERA := true
 
+# Dolby
+$(call inherit-product, hardware/dolby/dolby.mk)
+
 # Device identifiers.
 PRODUCT_NAME := evolution_X01AD
 PRODUCT_DEVICE := X01AD
