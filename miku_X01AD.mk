@@ -27,6 +27,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 # Inherit some common Miku UI stuff.
 $(call inherit-product, vendor/miku/build/product/miku_product.mk)
 
+# set viper4fx
+$(call inherit-product, vendor/v4afx/config.mk)
+
 # Maintainer
 MIKU_MASTER := AssunZain
 
@@ -37,6 +40,7 @@ BUILD_CORE_GAPPS_EXTRA := false
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_BUILD_APERTURE_CAMERA := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
+FACE_UNLOCK_SUPPORTED := true
 
 # Device identifiers.
 PRODUCT_NAME := miku_X01AD
