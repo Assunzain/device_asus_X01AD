@@ -32,10 +32,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 OCTAVI_MAINTAINER := AssunZain
 WITH_GAPPS := false
 OCTAVI_BUILD_TYPE := UNOFFICIAL
+
+# set viper4fx
+$(call inherit-product, vendor/v4afx/config.mk)
+
 TARGET_BOOT_ANIMATION_RES := 720
-TARGET_BUILD_APERTURE_CAMERA := true
+TARGET_BUILD_APERTURE_CAMERA := false
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
+FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_ENABLE_BLUR := true
 
