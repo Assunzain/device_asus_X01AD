@@ -28,6 +28,9 @@ $(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 # Set shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
+# set viper4fx
+$(call inherit-product, vendor/v4afx/config.mk)
+
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_FACE_UNLOCK_SUPPORTED := true 
 TARGET_SUPPORTS_GOOGLE_RECORDER := true 
