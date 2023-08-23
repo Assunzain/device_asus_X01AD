@@ -29,6 +29,10 @@ $(call inherit-product, vendor/superior/config/common_full_phone.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
+
+# set viper4fx
+$(call inherit-product, vendor/v4afx/config.mk)
+
 TARGET_BUILD_APERTURE_CAMERA := true
 # Stuff
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
