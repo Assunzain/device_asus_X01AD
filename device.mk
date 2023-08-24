@@ -513,6 +513,7 @@ PRODUCT_PACKAGES += \
     wificond \
     WifiOverlay \
     wpa_supplicant \
+    X01ADFaceUnlockOverlay \
     wpa_supplicant.conf
 
 PRODUCT_COPY_FILES += \
