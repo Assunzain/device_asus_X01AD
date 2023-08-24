@@ -1,3 +1,6 @@
 type hal_bt_channel_avoidance_hwservice, hwservice_manager_type;
 
 type ff_hwservice, hwservice_manager_type;
+
+# Dolby
+type hal_dms_hwservice, hwservice_manager_type;
