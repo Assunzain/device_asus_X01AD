@@ -22,23 +22,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from X01AD device
 $(call inherit-product, device/asus/X01AD/device.mk)
 
-# Inherit some common Evolution stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+# Inherit some common VoltageOS stuff.
+$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 
 # Set shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-
-# EvoX Stuff 
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_FACE_UNLOCK_SUPPORTED := true 
 TARGET_SUPPORTS_GOOGLE_RECORDER := true 
 TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 TARGET_BUILD_APERTURE_CAMERA := true
-TARGET_USES_PICO_GAPPS := true
+# VoltageOS Stuffs
+VOLTAGE_BUILD_TYPE := UNOFFICIAL
 
 # Device identifiers.
-PRODUCT_NAME := evolution_X01AD
+PRODUCT_NAME := voltage_X01AD
 PRODUCT_DEVICE := X01AD
 PRODUCT_MANUFACTURER := asus
 PRODUCT_BRAND := asus
