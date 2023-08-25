@@ -638,10 +638,6 @@ on property:vendor.opengles.version=*
 # Set gpu available frequencies property
 on property:vendor.gpu.available_frequencies=*
     setprop ro.vendor.gpu.available_frequencies ${vendor.gpu.available_frequencies}
-    
-# Dolby
-    mkdir /data/vendor/dolby 0770 media media
-    mkdir /data/vendor/multimedia 0775 system system
 
 service vendor.power_off_alarm /vendor/bin/power_off_alarm
    class core

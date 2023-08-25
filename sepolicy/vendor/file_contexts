@@ -31,10 +31,5 @@
 # Partitions
 /dev/block/platform/soc/7824900.sdhci/by-name/factory                                    u:object_r:factory_block_device:s0
 
-# Dolby
-/data/vendor/dolby(/.*)?                                                               u:object_r:vendor_data_file:s0
-/(vendor|system/vendor)/bin/hw/vendor\.dolby\.hardware\.dms@2\.0-service               u:object_r:hal_dms_default_exec:s0
-
-
 # Rild
 /(vendor|system/vendor)/radio/qcril_database/qcril.db			u:object_r:rild_file:s0
