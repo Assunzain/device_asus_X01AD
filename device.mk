@@ -46,6 +46,10 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 PRODUCT_PACKAGES += \
 disable_configstore
 
+# Qcamera2
+PRODUCT_PACKAGES += \
+    camera
+
 # Gcam Product
 PRODUCT_PACKAGES += \
     GcamGoMod
