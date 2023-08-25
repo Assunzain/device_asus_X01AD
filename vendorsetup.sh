@@ -14,7 +14,5 @@ git clone https://github.com/Assunzain/Kernel_asus_X01AD -b GLKernelSU-non-oc ke
 # import vendor
 git clone https://github.com/Assunzain/vendor_asus_X01AD_A13 -b 13 vendor/asus/X01AD
 
-# import clang
-rm -rf prebuilts/clang/host/linux-x86/clang-r498229
-git clone https://gitlab.com/Joker-V2/prebuilts_clang_host_linux-x86_clang-r498229.git -b master prebuilts/clang/host/linux-x86/clang-r498229 --depth=1
-
+# import clang proton support
+git clone https://github.com/kdrag0n/proton-clang -b master --depth=1 prebuilts/clang/host/linux-x86/clang-proton
