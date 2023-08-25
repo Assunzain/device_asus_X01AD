@@ -1436,7 +1436,7 @@
       <bass-extraction-enable value="false"/>
       <complex-equalizer-enable value="true"/>
       <regulator-enable value="true"/>
-      <regulator-speaker-dist-enable alue="true"/>
+      <regulator-speaker-dist-enable value="true"/>
       <regulator-sibilance-suppress-enable value="true"/>
       <bass-mbdrc-enable value="true"/>
       <virtual-bass-harmgains value="0,16,48,64"/>
@@ -1535,7 +1535,7 @@
       <volume-leveler-compressor-enable value="false"/>
       <bass-extraction-enable value="false"/>
       <complex-equalizer-enable value="false"/>
-      <regulator-enale value="true"/>
+      <regulator-enable value="true"/>
       <regulator-speaker-dist-enable value="true"/>
       <regulator-sibilance-suppress-enable value="true"/>
       <bass-mbdrc-enable value="true"/>
@@ -1835,7 +1835,7 @@
       <regulator-enable value="true"/>
       <regulator-speaker-dist-enable value="true"/>
       <regulator-sibilance-suppress-enable value="false"/>
-      <bass-mbdrc-enable value="tue"/>
+      <bass-mbdrc-enable value="true"/>
       <virtual-bass-harmgains value="-2080,48,48,48"/>
       <virtual-bass-hybgains value="0,0,0,0,0,0"/>
       <virtual-bass-rolloff-gain value="0"/>
@@ -1993,7 +1993,8 @@
       </regulator-tuning>
       <regulator-sibilance-suppress-amounts-left value="0,0,0,0,0,0"/>
       <regulator-sibilance-suppress-amounts-right value="0,0,0,0,0,0"/>
-      <bass-enhancer-boost value="192"/>     <bass-enhancer-cutoff-frequency value="200"/>
+      <bass-enhancer-boost value="192"/>
+      <bass-enhancer-cutoff-frequency value="200"/>
       <bass-enhancer-width value="16"/>
       <bass-extraction-cutoff-frequency value="200"/>
       <complex-equalizer-tuning-left value="0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0,32767,0"/>
