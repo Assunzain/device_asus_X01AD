@@ -120,9 +120,13 @@
         <fqname>@2.2::IImsCmService/qti.ims.connectionmanagerservice</fqname>
     </hal>
     <hal format="hidl">
-        <name>com.qualcomm.qti.uceservice</name>
+      <name>com.qualcomm.qti.uceservice</name>
         <transport>hwbinder</transport>
-        <fqname>@2.1::IUceService/com.qualcomm.qti.uceservice</fqname>
+        <version>2.3</version>
+        <interface>
+            <name>IUceService</name>
+            <instance>com.qualcomm.qti.uceservice</instance>
+        </interface>
     </hal>
     <hal format="hidl">
         <name>vendor.display.color</name>
