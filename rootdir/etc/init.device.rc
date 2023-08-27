@@ -77,8 +77,8 @@ on post-fs-data
     restorecon /data/vendor/focaltech
 
     # Tap to wake node
-    chown system system /proc/tpd_gesture
-    chmod 0660 /proc/tpd_gesture
+    chown system system /proc/touchpanel
+    chmod 0660 /proc/touchpanel
 
     write /sys/bus/msm_subsys/devices/subsys0/restart_level "related"
     write /sys/bus/msm_subsys/devices/subsys1/restart_level "related"
