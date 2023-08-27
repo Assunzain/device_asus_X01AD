@@ -310,6 +310,10 @@
     <hal format="hidl">
         <name>vendor.qti.imsrtpservice</name>
         <transport>hwbinder</transport>
-        <fqname>@2.1::IRTPService/imsrtpservice</fqname>
+        <version>3.0</version>
+        <interface>
+            <name>IRTPService</name>
+            <instance>imsrtpservice</instance>
+        </interface>
     </hal>
 </manifest>
