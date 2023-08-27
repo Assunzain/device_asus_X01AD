@@ -67,6 +67,9 @@ persist.vendor.camera.ois.enabled=1
 persist.vendor.camera.is_mode=4
 persist.vendor.camera.stats.test=5
 
+# DPM
+persist.vendor.dpmhalservice.enable=1
+
 # Codec2 switch
 debug.stagefright.omx_default_rank.sw-audio=1
 debug.stagefright.omx_default_rank=0
