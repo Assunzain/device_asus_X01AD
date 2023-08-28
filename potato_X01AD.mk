@@ -34,7 +34,9 @@ $(call inherit-product, vendor/v4afx/config.mk)
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_BUILD_APERTURE_CAMERA := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-WITH_GAPPS := false
+FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_USE_PIXEL_CHARGER := true
 
 # Device identifiers.
 PRODUCT_NAME := potato_X01AD
