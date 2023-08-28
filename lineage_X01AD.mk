@@ -22,30 +22,25 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from X01AD device
 $(call inherit-product, device/asus/X01AD/device.mk)
 
-# Inherit some common CherishOS stuff.
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+# Inherit some common Lineage OS stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
 
 
 # Set shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 
-TARGET_BOOT_ANIMATION_RES := 720
-TARGET_BUILD_APERTURE_CAMERA := true
-# CherishOS Stuff with GApps
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
+# RisingOS Flags
+RISING_CHIPSET := Snapdragon 632
+RISING_MAINTAINER := AssunZain
+RISING_DEVICE := X01AD
+TARGET_ENABLE_BLUR := false
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_ENABLE_BLUR := true
-WITH_GMS := false
-TARGET_IS_PIXEL := true
-CHERISH_BUILD_TYPE := UNOFFICIAL
-
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.cherish.maintainer=AssunZain
 
 # Device identifiers.
-PRODUCT_NAME := cherish_X01AD
+PRODUCT_NAME := lineage_X01AD
 PRODUCT_DEVICE := X01AD
 PRODUCT_MANUFACTURER := asus
 PRODUCT_BRAND := asus
