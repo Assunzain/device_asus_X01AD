@@ -22,9 +22,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from X01AD device
 $(call inherit-product, device/asus/X01AD/device.mk)
 
-# Inherit some common DroidX-UI stuff.
-$(call inherit-product, vendor/droidx/config/common.mk)
-
+# Inherit some common BLKI stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Set shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
@@ -40,11 +39,15 @@ FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_USE_PIXEL_CHARGER := true
 # DroidX
-DROIDX_BUILD_TYPE := OFFICIAL
-DROIDX_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+EXTRA_UDFPS_ANIMATIONS := false
+TARGET_HAS_UDFPS := false
+BLKI_BUILD_TYPE := UNOFFICIAL
+DROIDX_GAPPS := false
 
 # Device identifiers.
-PRODUCT_NAME := droidx_X01AD
+PRODUCT_NAME := aosp_X01AD
 PRODUCT_DEVICE := X01AD
 PRODUCT_MANUFACTURER := asus
 PRODUCT_BRAND := asus
