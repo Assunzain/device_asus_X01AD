@@ -54,10 +54,6 @@ PRODUCT_PACKAGES += \
 TARGET_SCREEN_HEIGHT := 1520
 TARGET_SCREEN_WIDTH := 720
 
-# add libbqio
-PRODUCT_PACKAGES += \
-    libbfqio
-
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
