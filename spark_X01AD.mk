@@ -32,7 +32,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 $(call inherit-product, vendor/v4afx/config.mk)
 
 TARGET_BOOT_ANIMATION_RES := 720
-TARGET_BUILD_APERTURE_CAMERA := true
+TARGET_BUILD_APERTURE_CAMERA := false
 # SparkOS Stuff with GApps
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
