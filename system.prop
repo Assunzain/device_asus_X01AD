@@ -64,6 +64,10 @@ ro.config.dha_tunnable=1
 #Disable Skip Validate
 sdm.debug.disable_skip_validate=1
 
+# Spark-OS
+ro.spark.maintainer= AssunZain
+ro.spark.maintainer.username= @AssunZain
+
 #Property to enable display default color mode
 vendor.display.enable_default_color_mode=1
 
