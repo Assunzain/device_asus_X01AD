@@ -16,9 +16,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/droidx_X01AD.mk
+    $(LOCAL_DIR)/colt_X01AD.mk
 
 COMMON_LUNCH_CHOICES := \
-    droidx_X01AD-user \
-    droidx_X01AD-userdebug \
-    droidx_X01AD-eng
+    colt_X01AD-user \
+    colt_X01AD-userdebug \
+    colt_X01AD-eng

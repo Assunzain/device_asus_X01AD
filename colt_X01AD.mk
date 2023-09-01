@@ -22,9 +22,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from X01AD device
 $(call inherit-product, device/asus/X01AD/device.mk)
 
-# Inherit some common DroidX-UI stuff.
-$(call inherit-product, vendor/droidx/config/common.mk)
-
+# Inherit some common ColtOS stuff.
+$(call inherit-product, vendor/colt/config/common_full_phone.mk)
 
 # Set shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
@@ -39,12 +38,14 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_USE_PIXEL_CHARGER := true
-# DroidX
-DROIDX_BUILD_TYPE := OFFICIAL
-DROIDX_GAPPS := true
+
+# Flags colt
+WITH_GAPPS := false
+COLT_BUILD_TYPE := UNOFFICIAL
+COLT_BUILD_MAINTAINER := AssunZain
 
 # Device identifiers.
-PRODUCT_NAME := droidx_X01AD
+PRODUCT_NAME := colt_X01AD
 PRODUCT_DEVICE := X01AD
 PRODUCT_MANUFACTURER := asus
 PRODUCT_BRAND := asus
