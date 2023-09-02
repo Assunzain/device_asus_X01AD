@@ -16,9 +16,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/droidx_X01AD.mk
+    $(LOCAL_DIR)/awaken_X01AD.mk
 
 COMMON_LUNCH_CHOICES := \
-    droidx_X01AD-user \
-    droidx_X01AD-userdebug \
-    droidx_X01AD-eng
+    awaken_X01AD-user \
+    awaken_X01AD-userdebug \
+    awaken_X01AD-eng
