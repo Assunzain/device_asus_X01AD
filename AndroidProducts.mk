@@ -16,9 +16,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/awaken_X01AD.mk
+    $(LOCAL_DIR)/aicp_X01AD.mk
 
 COMMON_LUNCH_CHOICES := \
-    awaken_X01AD-user \
-    awaken_X01AD-userdebug \
-    awaken_X01AD-eng
+    aicp_X01AD-user \
+    aicp_X01AD-userdebug \
+    aicp_X01AD-eng
