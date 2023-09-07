@@ -22,8 +22,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from X01AD device
 $(call inherit-product, device/asus/X01AD/device.mk)
 
-# Inherit some common AOSP stuff.
-$(call inherit-product, vendor/awaken/config/common_full_phone.mk)
+
+# Inherit some common Nitrogen stuff.
+$(call inherit-product, vendor/nitrogen/products/common.mk)
 
 # Set shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
@@ -38,15 +39,6 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_USE_PIXEL_CHARGER := true
-
-# GMS
-TARGET_GAPPS_ARCH := arm64
-USE_GAPPS := false
-
-# Extras
-AWAKEN_BUILD_TYPE := UNOFFICIAL
-TARGET_INCLUDE_LIVE_WALLPAPERS := true
-TARGET_INCLUDE_STOCK_ARCORE := true
 
 # Device identifiers.
 PRODUCT_NAME := awaken_X01AD
