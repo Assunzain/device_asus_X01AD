@@ -17,22 +17,28 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
+
+# Inherit some common Nusantara stuff.
+$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
 
 # Inherit from X01AD device
 $(call inherit-product, device/asus/X01AD/device.mk)
 
-# Inherit some common DerpfestOS stuff.
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+# Nusantara
+NAD_BUILD_TYPE := UNOFFICIAL
 
-# Set shipping API level
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
-# Derpfest Flags
-TARGET_BOOT_ANIMATION_RES := 720
-USE_LEGACY_BOOTANIMATION := true
+# Pixel Charging
+USE_PIXEL_CHARGING := true
+# Blur
+TARGET_USES_BLUR := true
+
 
 # Device identifiers.
-PRODUCT_NAME := derp_X01AD
+PRODUCT_NAME := nad_X01AD
 PRODUCT_DEVICE := X01AD
 PRODUCT_MANUFACTURER := asus
 PRODUCT_BRAND := asus
