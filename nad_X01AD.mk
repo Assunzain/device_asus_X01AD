@@ -27,6 +27,7 @@ $(call inherit-product, device/asus/X01AD/device.mk)
 
 # Nusantara
 NAD_BUILD_TYPE := UNOFFICIAL
+TARGET_BOOT_ANIMATION_RES := 720
 
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
