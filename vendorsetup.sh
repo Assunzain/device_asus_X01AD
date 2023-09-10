@@ -16,7 +16,7 @@ rm -rf packages/apps/Aperture
 git clone https://github.com/LineageOS/android_packages_apps_Aperture -b lineage-20.0 packages/apps/Aperture
 
 # import Kernel GreenLight v2.2 KSU
-git clone https://github.com/Assunzain/Kernel_asus_X01AD -b GLKernelSU-non-oc kernel/asus/X01AD --depth=1
+git clone https://github.com/Assunzain/Kernel_asus_X01AD -b 1 kernel/asus/X01AD --depth=1
 
 # import vendor
 git clone https://github.com/Assunzain/vendor_asus_X01AD_A13 -b 13 vendor/asus/X01AD
