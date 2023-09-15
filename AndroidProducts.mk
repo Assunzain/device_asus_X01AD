@@ -16,9 +16,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/awaken_X01AD.mk
+    $(LOCAL_DIR)/syberia_X01AD.mk
 
 COMMON_LUNCH_CHOICES := \
-    awaken_X01AD-user \
-    awaken_X01AD-userdebug \
-    awaken_X01AD-eng
+    syberia_X01AD-user \
+    syberia_X01AD-userdebug \
+    syberia_X01AD-eng
