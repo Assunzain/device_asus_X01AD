@@ -41,6 +41,7 @@ FACE_UNLOCK_SUPPORTED := true
 WITH_GAPPS := false
 TARGET_INCLUDE_PIXEL_CHARGER := true
 TARGET_USES_BLUR := true
+MAINTAINER := AssunZain
 
 # Device identifiers.
 PRODUCT_NAME := superior_X01AD
