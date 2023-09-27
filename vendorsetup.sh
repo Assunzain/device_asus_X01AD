@@ -34,4 +34,4 @@ git clone https://github.com/Assunzain/Kernel_asus_X01AD -b Perf{KSU} kernel/asu
 git clone https://github.com/Assunzain/vendor_asus_X01AD_A13 -b 13 vendor/asus/X01AD
 
 # import clang proton support
-git clone https://gitlab.com/arrowos-project/android_prebuilts_clang_host_linux-x86_clang-r4371https://gitlab.com/arrowos-project/android_prebuilts_clang_host_linux-x86_clang-r437112b12b -b master --depth=1 prebuilts/clang/host/linux-x86/clang-r437112b
+git clone https://gitlab.com/arrowos-project/android_prebuilts_clang_host_linux-x86_clang-r437112b -b master --depth=1 prebuilts/clang/host/linux-x86/clang-r437112b
