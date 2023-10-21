@@ -34,6 +34,7 @@ TARGET_BUILD_APERTURE_CAMERA := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 FACE_UNLOCK_SUPPORTED := true
 WITH_GAPPS := false
+TARGET_BUILD_APERTURE_CAMERA := true
 DEVICE_MAINTAINER := AssunZain
 
 # set viper4fx
@@ -41,7 +42,6 @@ $(call inherit-product, vendor/v4afx/config.mk)
 
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
-FACE_UNLOCK_SUPPORTED := true
 
 # Device identifiers.
 PRODUCT_NAME := arrow_X01AD
