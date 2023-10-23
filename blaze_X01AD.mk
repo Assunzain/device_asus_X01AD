@@ -28,15 +28,18 @@ $(call inherit-product, vendor/blaze/config/common_full_phone.mk)
 # Set shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
+# set viper4fx
+$(call inherit-product, vendor/v4afx/config.mk)
+
 # Blaze Official Stuff
 BLAZE_BUILD_TYPE := UNOFFICIAL
 BLAZE_MAINTAINER := AssunZain
 TARGET_BOOT_ANIMATION_RES := 720
 TARGET_GAPPS_ARCH := arm64
 TARGET_SUPPORTS_BLUR := true
-TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_USE_PIXEL_CHARGER := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
+FACE_UNLOCK_SUPPORTED := true
 WITH_GAPPS := false
 
 TARGET_BUILD_APERTURE_CAMERA := true
