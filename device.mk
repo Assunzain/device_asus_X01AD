@@ -42,9 +42,6 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(LOCAL_PATH)/overlay/frameworks/opt/net/wifi
 
-# Gcam Product
-PRODUCT_PACKAGES += \
-    GcamGoMod
 
 # Configstore
 PRODUCT_PACKAGES += \
