@@ -32,7 +32,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 $(call inherit-product, vendor/v4afx/config.mk)
 
 TARGET_BOOT_ANIMATION_RES := 720
-TARGET_FACE_UNLOCK_SUPPORTED := true 
+TARGET_FACE_UNLOCK_SUPPORTED := true
+FACE_UNLOCK_SUPPORTED := true 
 TARGET_SUPPORTS_GOOGLE_RECORDER := true 
 TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 TARGET_BUILD_APERTURE_CAMERA := true
