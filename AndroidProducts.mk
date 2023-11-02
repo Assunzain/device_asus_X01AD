@@ -16,9 +16,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/awaken_X01AD.mk
+    $(LOCAL_DIR)/bootleg_X01AD.mk
 
 COMMON_LUNCH_CHOICES := \
-    awaken_X01AD-user \
-    awaken_X01AD-userdebug \
-    awaken_X01AD-eng
+    bootleg_X01AD-user \
+    bootleg_X01AD-userdebug \
+    bootleg_X01AD-eng
