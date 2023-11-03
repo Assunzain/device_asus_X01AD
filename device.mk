@@ -18,9 +18,9 @@
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/asus/X01AD/X01AD-vendor.mk)
 
-# Disable APEX compression
-# Keep this after including updatable_apex.mk
-PRODUCT_COMPRESSED_APEX := false
+# Enable updating of APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+OVERRIDE_PRODUCT_COMPRESSED_APEX := false
 
 # Updatable
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -499,7 +499,7 @@ PRODUCT_PACKAGES += \
 
 # Wifi
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service
+    android.hardware.wifi-service
 
 PRODUCT_PACKAGES += \
     libcld80211 \
@@ -539,7 +539,4 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     Settings \
     SystemUI \
     NexusLauncherRelease
-    
-# Zen Parts
-PRODUCT_PACKAGES += \
-    ZenParts
+   
