@@ -36,7 +36,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-tequila
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
@@ -46,10 +46,6 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 # Configstore
 PRODUCT_PACKAGES += \
 disable_configstore
-
-# Gcam Product
-PRODUCT_PACKAGES += \
-    GcamGoMod
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1520
