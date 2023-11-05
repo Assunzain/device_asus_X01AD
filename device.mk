@@ -105,6 +105,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     fs_config_files
 
+# Doze mode
+PRODUCT_PACKAGES += \
+    Doze
+
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService
