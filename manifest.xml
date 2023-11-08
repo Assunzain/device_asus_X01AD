@@ -40,10 +40,6 @@
         <fqname>@2.4::ICameraProvider/legacy/0</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.drm</name>
-        <transport>hwbinder</transport>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.gatekeeper</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IGatekeeper/default</fqname>
@@ -91,10 +87,10 @@
     <hal format="hidl">
         <name>android.hardware.radio</name>
         <transport>hwbinder</transport>
+	<fqname>@1.4::IRadio/slot1</fqname>
+        <fqname>@1.4::IRadio/slot2</fqname>
         <fqname>@1.2::ISap/slot1</fqname>
         <fqname>@1.2::ISap/slot2</fqname>
-        <fqname>@1.5::IRadio/slot1</fqname>
-        <fqname>@1.5::IRadio/slot2</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.radio.config</name>
@@ -265,12 +261,6 @@
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.qtiradio</name>
         <transport>hwbinder</transport>
-        <fqname>@1.0::IQtiRadio/slot1</fqname>
-        <fqname>@1.0::IQtiRadio/slot2</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.radio.qtiradio</name>
-        <transport>hwbinder</transport>
         <fqname>@2.3::IQtiRadio/slot1</fqname>
         <fqname>@2.3::IQtiRadio/slot2</fqname>
     </hal>
@@ -330,20 +320,6 @@
             <fqname>@2.0::IFingerprintSensorTest/default</fqname>
         </hal>
     <hal format="hidl">
-        <name>vendor.goodix.hardware.fingerprint</name>
-            <transport>hwbinder</transport>
-            <fqname>@1.0::IGoodixBiometricsFingerprint/default</fqname>
-        </hal>
-    <hal format="hidl">
-        <name>com.qualcomm.qti.uceservice</name>
-        <transport>hwbinder</transport>
-        <version>2.3</version>
-        <interface>
-            <name>IUceService</name>
-            <instance>com.qualcomm.qti.uceservice</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
         <name>vendor.display.config</name>
         <transport>hwbinder</transport>
         <version>2.0</version>
@@ -372,15 +348,6 @@
             <fqname>@1.0::ICryptfsHw/default</fqname>
         </hal>
     <hal format="hidl">
-        <name>vendor.qti.hardware.perf</name>
-        <transport>hwbinder</transport>
-        <version>2.2</version>
-        <interface>
-            <name>IPerf</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
         <name>vendor.qti.hardware.qseecom</name>
             <transport>hwbinder</transport>
             <fqname>@1.0::IQSEECom/default</fqname>
@@ -401,5 +368,10 @@
             <fqname>@1.0::IImsFactory/default</fqname>
             <fqname>@1.1::IImsFactory/default</fqname>
         </hal>
-    
+<hal format="hidl">
+        <name>vendor.qti.hardware.perf</name>
+            <transport>hwbinder</transport>
+            <fqname>@2.2::IPerf/default</fqname>>
+        </hal>   
+
 </manifest>
