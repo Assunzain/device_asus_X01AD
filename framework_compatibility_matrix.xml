@@ -137,11 +137,6 @@
         <fqname>@1.0::IDisplayColor/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.display.config</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.1::IDisplayConfig/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.display.postproc</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IDisplayPostproc/default</fqname>
@@ -162,7 +157,7 @@
         <fqname>@2.0::IFactory/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.qti.esepowermanager</name>
+        name>vendor.qti.esepowermanager</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IEsePowerManager/default</fqname>
     </hal>
