@@ -214,6 +214,52 @@
         <fqname>@1.0::IQdutilsDisp/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>vendor.qti.hardware.alarm</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IAlarm/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.bluetooth_audio</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.0::IBluetoothAudioProvidersFactory/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.bluetooth_sar</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.1::IBluetoothSar/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.bt_channel_avoidance</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IBTChannelAvoidance/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.capabilityconfigstore</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::ICapabilityConfigStore/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.data.connection</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.1::IDataConnection/slot1</fqname>
+        <fqname>@1.1::IDataConnection/slot2</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.data.latency</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::ILinkLatency/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.factory</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.1::IFactory/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.qdutils_disp</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IQdutilsDisp/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>vendor.qti.hardware.qteeconnector</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IAppConnector/default</fqname>
