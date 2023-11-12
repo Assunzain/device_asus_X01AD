@@ -22,9 +22,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from X01AD device
 $(call inherit-product, device/asus/X01AD/device.mk)
 
-# Inherit some common PixelOs stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-
+# Inherit some common PixysOS stuff.
+$(call inherit-product, vendor/pixys/config/common_full_phone.mk)
 
 # Set shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
@@ -40,10 +39,10 @@ TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true 
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_BUILD_APERTURE_CAMERA := true
-
+TARGET_GAPPS_ARCH := arm64
 
 # Device identifiers.
-PRODUCT_NAME := aosp_X01AD
+PRODUCT_NAME := pixys_X01AD
 PRODUCT_DEVICE := X01AD
 PRODUCT_MANUFACTURER := asus
 PRODUCT_BRAND := asus
