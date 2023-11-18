@@ -127,10 +127,6 @@ PRODUCT_PACKAGES += \
     libvolumelistener \
     tinymix
 
-# add libbqio
-PRODUCT_PACKAGES += \
-    libbfqio
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.conf \
     $(LOCAL_PATH)/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
@@ -542,7 +538,4 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     Settings \
     SystemUI \
     NexusLauncherRelease
-    
-# Zen Parts
-PRODUCT_PACKAGES += \
-    ZenParts
+   
