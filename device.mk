@@ -54,10 +54,6 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
     
-# Gcam Product
-PRODUCT_PACKAGES += \
-    GcamGoMod
-
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
@@ -539,3 +535,6 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI \
     NexusLauncherRelease
    
+# Configstore
+PRODUCT_PACKAGES += \
+disable_configstore
